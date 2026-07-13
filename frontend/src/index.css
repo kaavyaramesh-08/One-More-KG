@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brandbg text-brandtext-primary font-inter;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+  }
+}
+
+/* Glassmorphism custom components */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
+}
+
+.gradient-progress {
+  background: linear-gradient(135deg, #66BB6A 0%, #2E7D32 100%);
+}
+
+.gradient-coral {
+  background: linear-gradient(135deg, #FF8A65 0%, #FF7043 100%);
+}

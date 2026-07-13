@@ -1,0 +1,5 @@
+backend/target/
+target/
+*.jar
+node_modules/
+.env
