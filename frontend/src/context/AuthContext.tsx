@@ -33,7 +33,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [loading, setLoading] = useState(true);
 
   // Read backend URL from Vite environment, default to localhost:8080
-  const apiUrl = (import.meta.env.VITE_API_URL || 'http://localhost:8080').replace(/\/$/, '');
+  const apiUrl = 'https://one-more-kg.onrender.com';
 
   useEffect(() => {
     const storedToken = localStorage.getItem('onemorekg_token');
